@@ -10,14 +10,14 @@ class User {
     this.company,
   });
 
-  int? id;
-  String? name;
-  String? username;
-  String? email;
-  Address? address;
-  String? phone;
-  String? website;
-  Company? company;
+  int id;
+  String name;
+  String username;
+  String email;
+  Address address;
+  String phone;
+  String website;
+  Company company;
 
   factory User.fromJson(Map<String, dynamic> json) => User(
         id: json["id"],
@@ -40,11 +40,11 @@ class Address {
     this.geo,
   });
 
-  String? street;
-  String? suite;
-  String? city;
-  String? zipcode;
-  Geo? geo;
+  String street;
+  String suite;
+  String city;
+  String zipcode;
+  Geo geo;
 
   factory Address.fromJson(Map<String, dynamic> json) => Address(
         street: json["street"],
@@ -61,8 +61,8 @@ class Geo {
     this.lng,
   });
 
-  String? lat;
-  String? lng;
+  String lat;
+  String lng;
 
   factory Geo.fromJson(Map<String, dynamic> json) => Geo(
         lat: json["lat"],
@@ -77,9 +77,9 @@ class Company {
     this.bs,
   });
 
-  String? name;
-  String? catchPhrase;
-  String? bs;
+  String name;
+  String catchPhrase;
+  String bs;
 
   factory Company.fromJson(Map<String, dynamic> json) => Company(
         name: json["name"],
