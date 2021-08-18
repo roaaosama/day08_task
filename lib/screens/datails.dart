@@ -58,10 +58,10 @@ class _UserDetailsState extends State<UserDetails> {
               pushPage(
                   context,
                   MapSample(
-                    userLocation: widget.user.address.geo,
+                    userLoaction: widget.user.address.geo,
                   ));
             },
-            child: Text('MAP VIEW'),
+            child: Text("Map view"),
           )
         ],
       ),
